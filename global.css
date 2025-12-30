@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    z-index: 5;
+    scrollbar-gutter: stable both-edges
+}
+
+p, div, span, h1, h2, h3, h4, h5, h6, button, a {
+  cursor: default;
+}
+
+button, a, nav li{
+    cursor: pointer;
+}
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    pointer-events: none;
+    background: rgb(219, 130, 13);
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    display: grid;
+    place-items: center;
+}
+
+
+#fader img{
+    width: 20vw;
+    
+}
+@keyframes fade-out {
+    from { opacity: 1 }
+        to { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}
+
+nav{
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.227);
+    backdrop-filter: blur(1px);
+    position: fixed;
+    top: 0;
+    background-color: rgb(248, 239, 213);
+    z-index: 999998;
+    display: flex;
+}
+
+nav img{
+    height: 100%;
+}
+
+button{
+    box-sizing: content-box;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    border: 2px;
+    color: white;
+    box-shadow: 4px 4px 2px rgba(37, 13, 2, 0.534);
+    background-color: brown;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+nav ul{    
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+nav li{
+    height: 100%;
+    width: 100%;
+
+}
+
+nav a{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center
+}
+
+nav a:any-link{
+    color:black;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background-color: brown;
+    color: white;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.active-nav{
+    background-color: rgb(255, 157, 0);
+}
+
+h1, h2{
+    font-size: clamp(3rem, 8vw, 13rem);
+    font-family: "Changa One", sans-serif;
+      font-family: "Ranchers", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(248, 239, 213);
+    text-align: left;
+    text-shadow: 4px 4px 3px rgba(37, 13, 2, 0.534);
+    white-space: pre;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 1.8vw, 5rem);
+    color:rgb(255, 223, 171);
+    text-shadow: 4px 4px 3px rgba(37, 13, 2, 0);
+       font-weight: 500;
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 1.3vw, 5rem);
+    font-weight: 700;
+    text-shadow: 4px 4px 3px rgba(37, 13, 2, 0);
+}
+
+p{
+    line-height: 2;
+    font-size: clamp(1rem, 1vw, 5rem);
+}
+
+.text-block p, .text-block li, .text-block a, .text-block strong, .text-block em{
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-block em{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.text-block strong{
+    font-weight: 800;
+    color: brown;
+}
+
+.text-block li{
+    list-style-type: disc;
+}
+
+.text-block ul{
+    padding-left: 3em;
+}
+
+.text-block .first-line{
+    font-weight: 700;
+}
+
+.section-head strong{
+    background-color: brown;
+    color: white;  
+    padding: 0.5rem;
+    padding-left: 50rem;
+    padding-right: 2rem;
+    margin-left: -50rem;
+    font-size: 2rem;
+}
+
+.section-head{
+    margin: 1.3rem;
+}
+.socials{
+    display: flex;
+}
+
+.socials button{
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    padding: 0.9rem;
+    margin-top: 1rem;
+}
+
+.title-bar{
+    height: 12rem;
+    background-color:brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.544);
+}
+
+.title-bar h1{
+    font-size: 4rem;
+    text-shadow: 4px 1px 2px rgba(37, 13, 2, 0.534);
+}
+
+footer{
+    height: 3rem;
+    width: 100%;
+    background-color: brown;
+    bottom: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media screen and (max-width: 40rem){
+    
+}

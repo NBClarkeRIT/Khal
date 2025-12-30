@@ -1,0 +1,10 @@
+main{
+    width: 60vw;
+    margin: 5rem auto;
+}
+
+.first-line{
+    margin: 2rem;
+    margin-left: -3rem;
+    font-weight: 700;
+}

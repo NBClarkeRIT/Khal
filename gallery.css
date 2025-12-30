@@ -1,0 +1,17 @@
+main{
+    width: 80vw;
+    margin: 10rem auto;
+    display: flex;
+    flex: 0 0 20vw;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+main img{
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.397);
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+}
