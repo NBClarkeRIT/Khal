@@ -8,3 +8,20 @@ main{
     margin-left: -3rem;
     font-weight: 700;
 }
+
+.title-bar h1{
+    font-size: clamp(1rem, 7vw, 5rem);
+}
+
+@media screen and (max-width: 60rem){
+    main{
+        width:85vw;
+        margin: 1rem auto;
+    }
+
+    .first-line{
+    margin: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+}

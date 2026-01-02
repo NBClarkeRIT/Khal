@@ -115,6 +115,7 @@ main{
     z-index: 2;
 }
 
+
 @media screen and (max-width: 60rem){
     header{
         grid-template-columns: 100%;
@@ -139,14 +140,6 @@ main{
         margin-top: 0;
     }
 
-    nav{
-        height: 3rem;
-    }
-
-    nav ul{
-        display: none;
-    }
-
     footer{
         display: none;
     }
@@ -160,10 +153,7 @@ main{
 
     .buttons{
         display: none;
-
     }
-
-
 
     main{
         grid-template-columns: 1fr;
