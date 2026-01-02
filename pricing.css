@@ -256,8 +256,10 @@ form{
     }
 
     .options{
-        width: 90%;
-
+        width: 100%;
+        border-radius: 0;
+        border:none;
+        height: fit-content;
     }
 
     .model{
