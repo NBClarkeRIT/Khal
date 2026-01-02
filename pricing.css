@@ -226,6 +226,10 @@ form{
         background-color: #EAE2B7;
     }
 
+    .title{
+        top: 15.5vh;
+    }
+
     .top{
         background-color: none;
     }
