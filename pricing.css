@@ -1,0 +1,261 @@
+.top{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 97vh;
+    background-color: #EAE2B7;
+}
+
+main {
+    height: 82vh;
+    width: 100%;
+    margin: 15vh auto;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.model {
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    place-items: center;
+}
+
+.model > * {
+    grid-area: 1 / 1;
+}
+
+.model img {
+    height: 100%;
+}
+
+.diagonal{
+    height: 140%;
+    background-color: #F77F00;
+    width: 45%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: -5px 0 8px rgba(0, 0, 0, 0.559);
+    z-index: 15;
+    /* transform: rotate(5deg) translate(5rem); */
+}
+
+.options{ 
+    height: 70vh;
+    grid-column: 2;
+    justify-self: start;
+    background-color: rgb(255, 255, 255);
+    border: 7px solid brown;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 8;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem auto;
+
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+.scroll{
+    overflow-y: auto; 
+    width: 100%;
+    padding: 1rem;
+}
+
+.circles{
+    background: radial-gradient(circle at top left,transparent 9%, #7a2020 10% ,#7a2020 15% , transparent 16%) , radial-gradient(circle at bottom left,transparent 9%, #7a2020 10% ,#7a2020 15% , transparent 16%), radial-gradient(circle at top right ,transparent 9%, #7a2020 10% ,#7a2020 15% , transparent 16%) , radial-gradient(circle at bottom right,transparent 9%, #7a2020 10% ,#7a2020 15% , transparent 16%),radial-gradient(circle, transparent 25%, #715050  26%),linear-gradient(45deg, transparent 46%, #7a2020 47%, #7a2020 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #7a2020 47%, #7a2020 52%, transparent 53%);
+    background-size: 5em 5em;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.359) , transparent 50%);
+    height: 100%;
+    width: 100%;
+    background-color: #6c4f4f;
+    opacity: 1;
+    z-index:16;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+button{
+    background-color: rgb(131, 31, 31);
+    box-shadow: 0px 3px 0px rgb(103, 63, 42);
+    font-family: "Ranchers", sans-serif;
+    width: calc(100% - 4rem);
+    height: 3vh;
+    text-align: left;
+    overflow-y: auto; 
+    margin: 0.5rem auto;
+    overflow-y: hidden; 
+    transition: background-color 0.2s ease;
+}
+
+button:hover{
+    background-color: orange;
+    color: rgb(0, 0, 0);
+}
+
+.options p{
+    font-size: 1rem;
+}
+.scroll div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.text-block li{
+    list-style-type: none;
+}
+
+.text-block ul{
+    padding-left: 0;
+}
+
+.active div {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.shadow{
+    display: block;
+    position: absolute;
+    top: 10.5vh;
+    width: 55%;
+    height: 13rem;
+    background: linear-gradient(to left,  rgb(74, 5, 3)0%, #a1170dd3 50%);
+    z-index: 7;
+}
+
+.standard{
+    box-sizing: content-box;
+    height: 50vh;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item{
+    flex: 0 1 18vw;
+    border-radius: 2rem;
+    height: 100%;
+    background-color: orange;
+}
+
+.break{
+    background-color: orange;
+    width: 100%;
+    height: 15rem;
+    display: none;
+
+}
+.grad{
+    background: linear-gradient(to left, rgba(164, 70, 26, 0.677), transparent);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.shadow h3{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    width: 65%;
+    z-index: 20;
+    text-align: right;
+    justify-self: end;
+}
+
+.title-bar{
+    display: none;
+}
+
+form{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.title{
+    color: white;
+    position: absolute;
+    line-height: 0.9;
+    z-index: 15;
+    top: 12vh;
+    left: 3rem;
+}
+
+.title h1{
+    font-size: 6rem;
+}
+
+@media screen and (max-width: 60rem){
+    main{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 35vh;
+        padding-bottom: 5rem;
+        margin-top: 0;
+        background-color: #EAE2B7;
+    }
+
+    .top{
+        background-color: none;
+    }
+    .diagonal{
+        width: 100%;
+        display: none;
+    }
+    .circles{
+        display: none;
+    }
+
+    .grad{
+        display: none;
+    }
+
+    .shadow{
+        width: 100%;
+        z-index: 55;
+    }
+
+    .title{
+        width: 100%;
+        left: 0;
+    }
+
+    .title h1{
+        text-align: center;
+    }
+
+    .options{
+        width: 90%;
+
+    }
+
+    .model{
+        height: 0;
+    }
+}
+    
