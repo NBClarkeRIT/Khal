@@ -65,7 +65,6 @@ main {
     padding: 1rem;
     padding-left: 0;
     margin: 1rem auto;
-
     box-sizing: border-box;
     overflow: hidden; 
 }
@@ -107,6 +106,7 @@ button{
     transition: background-color 0.2s ease;
 }
 
+
 button:hover{
     background-color: orange;
     color: rgb(0, 0, 0);
@@ -123,8 +123,12 @@ button:hover{
 
 .text-block li{
     list-style-type: none;
+
 }
 
+.text-block p {
+    font-size: 1.4rem;
+}
 .example div{
     overflow: hidden;
 }

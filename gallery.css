@@ -11,9 +11,8 @@ main{
 
 main img{
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.397);
-    width: 25vw;
-    height: 25vw;
-    object-fit: cover;
+    height: 25rem;
+    width: auto;
 }
 
 @media screen and (max-width: 60rem){
@@ -21,12 +20,11 @@ main img{
         width: 90vw;
         margin: 5rem auto;
         flex: 0 0 90vw;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     main img{
-        width: 80vw;
-        height: 80vw;
-        
+        width: 75vw;
+        height: auto;
     }
 }

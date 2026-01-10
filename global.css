@@ -196,8 +196,10 @@ nav a:hover{
 h1, h2{
     font-size: clamp(3rem, 8vw, 13rem);
     font-family: "Changa One", sans-serif;
-      font-family: "Ranchers", sans-serif;
-    font-weight: 300;
+    font-family: "alphabet-soup-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
     font-style: italic;
     color: rgb(248, 239, 213);
     text-align: left;
