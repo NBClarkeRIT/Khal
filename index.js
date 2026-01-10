@@ -6,11 +6,11 @@ hamburger.addEventListener("click", () => {
 });
 
 // fadeInPage();
-function fadeInPage() {
-       if (!window.AnimationEvent) { return; }
-           var fader = document.getElementById('fader');
-    fader.classList.add('fade-out');
-}
+// function fadeInPage() {
+//        if (!window.AnimationEvent) { return; }
+//            var fader = document.getElementById('fader');
+//     fader.classList.add('fade-out');
+// }
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   if (!window.AnimationEvent) { return; }
