@@ -228,6 +228,10 @@ hr{
     border: none;
 }
 
+input[type="number"],
+input[type="range"] {
+    scroll-margin-top: 0; 
+}
 
 .range-pair {
     display: flex;        

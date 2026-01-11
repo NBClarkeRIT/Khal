@@ -129,56 +129,60 @@
                     <!-- <div>
                         <p>Select the following to get a projected price range. Fill out a quote form to get an accurate price quote from me today!</p>
                         <br> -->
-                    <form class="calculator">
                     <h2>Design Complexity</h2>
-                    <label>
-                    How many colors does your design have?<br>
-                    <div class="range-pair">
-                    <input type="range" min="5" max="100" step="1" value="5" name="colorRange">
-                    <input type="number" min="5" max="100" step="1" value="5" name="colorNumber">
+                    <div class="label-block">
+                        <label>How many colors does your design have?</label>
+                        <div class="range-pair">
+                            <input type="range" min="1" max="100" step="1" value="1" name="colorRange">
+                            <input type="number" min="1" max="100" step="1" value="1" name="colorNumber">
+                        </div>
                     </div>
-                    <br><br>
-                    <label>
-                    How many small details does your design have? <br>
-                    <div class="range-pair">
-                    <input type="range" min="1" max="100" step="1" value="1" name="detailRange">
-                    <input type="number" min="1" max="100" step="1" value="1" name="detailNumber">
+                    <div class="label-block">
+                        <label>How many colors does your design have?</label>
+                        <div class="range-pair">
+                            <input type="range" min="1" max="100" step="1" value="1" name="detailRange">
+                            <input type="number" min="1" max="100" step="1" value="1" name="detailNumber">
+                        </div>
                     </div>
-                    </label>
                     <hr>
                     <h2>Head</h2>
                     <label>
                         <input type="checkbox" name="head">
-                        Head – $1,800
+                        Head
                     </label>
                     <br>
                     <div class="label-block">
                         <label>
-                            Detachable Tongues<br>
+                            Detachable Tongues?<br>
                         </label>
                         <div class="range-pair">
                             <input type="range" min="0" max="10" step="1" value="0" name="tongueRange">
                             <input type="number" min="0" max="10" step="1" value="0" name="tongueNumber">
                         </div>
                     </div>
-
+                    <div class="label-block">
+                        <label>3D-Printed Piercings?</label>
+                        <div class="range-pair">
+                            <input type="range" min="1" max="10" step="1" value="1" name="pierceRange">
+                            <input type="number" min="1" max="10" step="1" value="1" name="pierceNumber">
+                        </div>
+                    </div>
                     <div class="label-block">
                         <label>
                             <input type="checkbox" name="pickableNose">
                             Pickable Nose
                         </label>
                     </div>
-                    <br>
-                    <label>
-                        3D-Printed Piercings<br>
-                        <input type="number" name="piercings" min="0">
-                    </label><br>
-                    <label>
+                    <div class="label-block">
                         <input type="checkbox" name="magneticEyelids">
                         Magnetic Eyelids
-                    </label>
+                    </div>
                     <hr>
                     <h2>Paws</h2>
+                    <label>
+                        <input type="radio" name="paws" value="empty" checked>
+                        None
+                    </label><br>
                     <label>
                         <input type="radio" name="paws" value="standard">
                         Standard Paws (four fingers)
@@ -190,7 +194,10 @@
                     <hr>
 
                     <h2>Armsleeves</h2>
-
+                    <label>
+                        <input type="radio" name="armsleeves" value="empty" checked>
+                        None
+                    </label><br>
                     <label>
                         <input type="radio" name="armsleeves" value="standard">
                         Standard Armsleeves
@@ -205,6 +212,10 @@
 
                     <h2>Tail</h2>
 
+                    <label>
+                        <input type="radio" name="tail" value="empty" checked>
+                        None
+                    </label><br>
                     <label>
                         <input type="radio" name="tail" value="small">
                         Small / Nub Tail
@@ -233,7 +244,10 @@
                     <hr>
 
                     <h2>Feetpaws</h2>
-
+                    <label>
+                        <input type="radio" name="feetpaws" value="empty" checked>
+                        None
+                    </label><br>
                     <label>
                         <input type="radio" name="feetpaws" value="plantigrade">
                         Plantigrade Feetpaws
@@ -270,8 +284,7 @@
                         Zip-Off Tail
                     </label>
 
-                    </form>
-                    </div>
+                </div>
             </div>
         </div>
     </main>
