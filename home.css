@@ -32,12 +32,13 @@ header{
 
 .buttons{
     position: absolute;
-    top: 48vh;
-    right: calc(33%);
+    top: 56vh;
+    left: 50%;
 }
 
-button{
-    margin-left: 1rem;
+.buttons a{
+    margin-top: 1rem;
+    margin: 0.4rem;
 }
 
 .title h2{
@@ -45,7 +46,10 @@ button{
 }
 
 .raffle{
-    margin-top: min(9vh, 7rem);
+    display: block;
+    box-sizing: content-box;
+    text-align: center;
+    width: calc(100% - 4rem);
     background: linear-gradient(25deg, rgb(236, 151, 22),  rgb(236, 151, 22));
     border: 3px solid white;
     color:rgb(255, 255, 255);
@@ -80,8 +84,11 @@ button{
 
 main img{
     grid-column: 1;
-    width: 80%;
+    width: 60%;
+    margin: 2rem;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.692);
 }
+
 main{
     width: 60%;
     height: 50vh;
