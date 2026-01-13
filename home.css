@@ -36,7 +36,7 @@ header{
     left: 50%;
 }
 
-.buttons a{
+.buttons a, .buttons-mobile a{
     margin-top: 1rem;
     margin: 0.4rem;
 }
@@ -45,6 +45,11 @@ header{
     line-height: 1.5;
 }
 
+.buttons-mobile a{
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 5px black;
+}
 .raffle{
     display: block;
     box-sizing: content-box;
@@ -142,6 +147,10 @@ strong{
     text-align: center;
 }
 
+.buttons-mobile{
+    display: none;
+}
+
 .trello a{}
 
 @media screen and (max-width: 60rem){
@@ -183,6 +192,14 @@ strong{
         display: none;
     }
 
+    .buttons-mobile{
+        display: flex;
+        margin-top: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     main{
         grid-template-columns: 1fr;
         grid-template-rows: 30vh auto;
@@ -204,4 +221,4 @@ strong{
         grid-row: 2;
         text-align: center;
     }
-}
+    }
