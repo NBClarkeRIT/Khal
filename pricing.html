@@ -48,20 +48,25 @@
     <div class="title">
         <h1 class="first-header">PRICE</h1>
         <h1 class="second-header">ESTIMATE</h1>
-    </div>
+
+        </div>
+        <div class="cost">
+            <h2 class="cost-text"></h2>
+        </div>
     <main>
         <div class="model">
             <!-- <p><strong>This is just an estimate</strong>, Contact me for an official quote</p> -->
             <img src="Images/white-outline.png" class="white-outline">
             <img src="Images/head.png" class="preview">
             <img src="Images/outline.png" class="outline">
+
         </div>
         <div class="options">
             <div class="tabs">
-                <button class="enabled tab "  data-page="0">Examples</button>
-                <button class="tab"  data-page="1">Calculator</button>
+                <button class="tab "  data-page="0">Examples</button>
+                <button class="enabled tab"  data-page="1">Calculator</button>
             </div>
-            <div class="scroll text-block ">
+            <div class="scroll text-block examples">
                 <ul>
                     <li class="active example" data-img="0">
                         <button >Head Only</button>
@@ -126,9 +131,9 @@
                 </ul>
             </div>
             <div class="scroll text-block calculator enabled" >
-                    <!-- <div>
+                    <div>
                         <p>Select the following to get a projected price range. Fill out a quote form to get an accurate price quote from me today!</p>
-                        <br> -->
+                    <br>
                     <h2>Design Complexity</h2>
                     <div class="label-block">
                         <label>How many colors does your design have?</label>
@@ -138,46 +143,81 @@
                         </div>
                     </div>
                     <div class="label-block">
-                        <label>How many colors does your design have?</label>
+                        <label>How many details does your design have?</label>
                         <div class="range-pair">
-                            <input type="range" min="1" max="100" step="1" value="1" name="detailRange">
-                            <input type="number" min="1" max="100" step="1" value="1" name="detailNumber">
+                            <input type="range" min="0" max="100" step="1" value="1" name="detailRange">
+                            <input type="number" min="0" max="100" step="1" value="0" name="detailNumber">
                         </div>
                     </div>
                     <hr>
                     <h2>Head</h2>
                     <label>
-                        <input type="checkbox" name="head">
+                        <input type="checkbox" name="head" class="head-button">
                         Head
                     </label>
                     <br>
-                    <div class="label-block">
-                        <label>
-                            Detachable Tongues?<br>
-                        </label>
-                        <div class="range-pair">
-                            <input type="range" min="0" max="10" step="1" value="0" name="tongueRange">
-                            <input type="number" min="0" max="10" step="1" value="0" name="tongueNumber">
+                    <div class="head-options">
+                        <div class="label-block">
+                            <label>
+                                Detachable Tongues?<br>
+                            </label>
+                            <div class="range-pair">
+                                <input type="range" min="0" max="10" step="1" value="0" name="tongueRange">
+                                <input type="number" min="0" max="10" step="1" value="0" name="tongueNumber">
+                            </div>
                         </div>
-                    </div>
-                    <div class="label-block">
-                        <label>3D-Printed Piercings?</label>
-                        <div class="range-pair">
-                            <input type="range" min="1" max="10" step="1" value="1" name="pierceRange">
-                            <input type="number" min="1" max="10" step="1" value="1" name="pierceNumber">
+                        <div class="label-block">
+                            <label>3D-Printed Piercings?</label>
+                            <div class="range-pair">
+                                <input type="range" min="0" max="10" step="1" value="0" name="pierceRange">
+                                <input type="number" min="0" max="10" step="1" value="0" name="pierceNumber">
+                            </div>
                         </div>
-                    </div>
-                    <div class="label-block">
-                        <label>
-                            <input type="checkbox" name="pickableNose">
-                            Pickable Nose
-                        </label>
-                    </div>
-                    <div class="label-block">
-                        <input type="checkbox" name="magneticEyelids">
-                        Magnetic Eyelids
-                    </div>
+                        <div class="label-block">
+                            <label>
+                                <input type="checkbox" name="pickableNose">
+                                Pickable Nose
+                            </label>
+                        </div>
+                        <div class="label-block">
+                            <input type="checkbox" name="magneticEyelids">
+                             &nbsp;Magnetic Eyelids
+                        </div>
+                        </div>
+                    
                     <hr>
+                    <h2>Body</h2>
+                    <label>
+                        <input  class="body-selector" data-selection="0" type="radio" name="body" value="empty" checked>
+                        None
+                    </label><br>
+                    <label>
+                        <input class="body-selector" data-selection="1" type="radio" name="body" value="digitigrade">
+                        Digitgrade
+                    </label><br>
+                    <label>
+                        <input class="body-selector" data-selection="2" type="radio" name="body" value="plantigrade">
+                        Plantigrade
+                    </label><br>
+                    <hr>
+                    <div class="sleeves active">
+                        <h2>Armsleeves</h2>
+                        <label>
+                            <input type="radio" name="armsleeves" value="empty" checked>
+                            None
+                        </label><br>
+                        <label>
+                            <input type="radio" name="armsleeves" value="standard">
+                            Standard Armsleeves
+                        </label><br>
+
+                        <label>
+                            <input type="radio" name="armsleeves" value="wingsleeves">
+                            Wingsleeves
+                        </label>
+                        <hr>
+                    </div>
+
                     <h2>Paws</h2>
                     <label>
                         <input type="radio" name="paws" value="empty" checked>
@@ -193,22 +233,7 @@
                     </label>
                     <hr>
 
-                    <h2>Armsleeves</h2>
-                    <label>
-                        <input type="radio" name="armsleeves" value="empty" checked>
-                        None
-                    </label><br>
-                    <label>
-                        <input type="radio" name="armsleeves" value="standard">
-                        Standard Armsleeves
-                    </label><br>
 
-                    <label>
-                        <input type="radio" name="armsleeves" value="wingsleeves">
-                        Wingsleeves
-                    </label>
-
-                    <hr>
 
                     <h2>Tail</h2>
 

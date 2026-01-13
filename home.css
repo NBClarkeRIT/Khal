@@ -101,6 +101,21 @@ main{
     justify-items: center;
 }
 
+.trello-block{
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+strong{
+    font-weight: 700;
+    font-size: larger;
+    padding: 1rem;
+}
 .intro{
     grid-column: 2;
     width: 100%;
@@ -122,6 +137,12 @@ main{
     z-index: 2;
 }
 
+.trello{
+    width: 10rem;
+    text-align: center;
+}
+
+.trello a{}
 
 @media screen and (max-width: 60rem){
     header{
