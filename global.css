@@ -79,7 +79,7 @@ nav img{
     border-radius: 3px;
 }
 
-button, .socials a{
+button, .socials a,  a.home-button{
     box-sizing: content-box;
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -87,21 +87,27 @@ button, .socials a{
     box-shadow: 4px 4px 2px rgba(37, 13, 2, 0.534);
     background-color: brown;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
-.buttons a{
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.buttons a, a.home-button{
     box-sizing: content-box;
     color: white;
     padding: 1rem 1.3rem;
     border-radius: 1rem;
     box-shadow: 4px 4px 2px rgba(37, 13, 2, 0.534);
     font-size: 1.2rem;
+
 }
 
 .socials a{
     font-size: 2rem;
 }
-button:hover, .buttons a:hover{
+button:hover, .buttons a:hover, a.home-button:hover{
     background-color: white;
     color: black;
 }
